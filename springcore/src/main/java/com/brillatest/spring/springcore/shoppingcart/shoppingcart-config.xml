@@ -5,10 +5,12 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://www.springframework.org/schema/beans">
-	<bean name="scores"
-		class="com.brillatest.spring.springcore.reftypes.Scores" p:mat="80"
-		p:fisica="90" p:quimica="78" />
-	<bean name="student"
-		class="com.brillatest.spring.springcore.reftypes.Student" p:scores-ref="scores"/>
+	<bean name="item"
+		class="com.brillatest.spring.springcore.shoppingcart.Item" p:id="01"
+		p:name="Polenta" p:price="10.00" p:quantity="10" />
+
+	<bean name="shoppingcart"
+		class="com.brillatest.spring.springcore.shoppingcart.ShoppingCart"
+		p:item-ref="item" />
 
 </beans>
