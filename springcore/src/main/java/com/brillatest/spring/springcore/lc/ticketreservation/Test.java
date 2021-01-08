@@ -1,4 +1,4 @@
-package com.brillatest.spring.springcore.lc.annotations;
+package com.brillatest.spring.springcore.lc.ticketreservation;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.CommonAnnotationBeanPostProcessor;
@@ -10,9 +10,9 @@ public class Test {
 	public static void main(String[] args) {
 
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext(
-				"com/brillatest/spring/springcore/lc/annotations/config.xml");
-		Patient pt = (Patient) context.getBean("patient");
-		System.out.println(pt.toString());
+				"com/brillatest/spring/springcore/lc/ticketreservation/config.xml");
+		TicketReservation tr = (TicketReservation) context.getBean("ticketreservation");
+		System.out.println(tr.toString());
 		context.registerShutdownHook();
 		
 		

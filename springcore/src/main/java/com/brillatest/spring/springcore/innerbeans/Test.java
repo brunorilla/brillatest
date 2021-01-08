@@ -1,4 +1,4 @@
-package com.brillatest.spring.springcore.map;
+package com.brillatest.spring.springcore.innerbeans;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -6,11 +6,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 
 	public static void main(String[] args) {
-
 		ApplicationContext context = new ClassPathXmlApplicationContext(
-				"com/brillatest/spring/springcore/map/map-config.xml");
-		Customer cust = (Customer) context.getBean("customer");
-		System.out.println(cust);
+				"com/brillatest/spring/springcore/innerbeans/config.xml");
+		Employee employee = (Employee) context.getBean("employee");
+		System.out.println(employee);
 		
 	}
 

@@ -8,5 +8,5 @@
 	<bean
 		class="com.brillatest.spring.springcore.lc.annotations.Patient"
 		name="patient" p:id="001"></bean>
-		<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
+	<context:annotation-config></context:annotation-config>
 </beans>

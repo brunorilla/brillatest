@@ -5,20 +5,6 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://www.springframework.org/schema/beans">
-	<bean name="customer"
-		class="com.brillatest.spring.springcore.map.Customer" p:id="20">
-		<property name="products">
-			<map>
-				<entry key="100" value="Motorola Hyper X"></entry>
-				<entry key="101">
-					<value>Legion 5i</value>
-				</entry>
-				<entry value="ThinkPad T15">
-					<key>
-						<value>102</value>
-					</key>
-				</entry>
-			</map>
-		</property>
-	</bean>
+	<bean class="com.brillatest.spring.springcore.dependencycheck.Prescription" name="prescription" p:id="001"></bean>
+	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
 </beans>
