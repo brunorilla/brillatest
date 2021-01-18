@@ -5,10 +5,13 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://www.springframework.org/schema/beans">
-	<bean class="com.brillatest.spring.springcore.innerbeans.Employee" name="employee" p:id="123">
+	<bean class="com.brillatest.spring.springcore.innerbeans.Employee"
+		name="employee" p:id="123" scope="prototype">
 		<property name="address">
-			<bean class="com.brillatest.spring.springcore.innerbeans.Address" p:hno="1712" p:street="Avalon St" p:city="West Memphis, Arkansas"/>
+			<bean
+				class="com.brillatest.spring.springcore.innerbeans.Address"
+				p:hno="1712" p:street="Avalon St" p:city="West Memphis, Arkansas" />
 		</property>
 	</bean>
 
-</beans>
+</beans> 

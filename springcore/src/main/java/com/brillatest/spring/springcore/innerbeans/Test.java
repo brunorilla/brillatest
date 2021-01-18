@@ -9,8 +9,9 @@ public class Test {
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"com/brillatest/spring/springcore/innerbeans/config.xml");
 		Employee employee = (Employee) context.getBean("employee");
-		System.out.println(employee);
-		
+		System.out.println(employee.hashCode());
+		Employee employee2 = (Employee) context.getBean("employee");		
+		System.out.println(employee2.hashCode());
 	}
 
 }
