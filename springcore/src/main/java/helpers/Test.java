@@ -4,11 +4,19 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] numbers = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30};
-		
+		int[] numbers = {3,2,1,4,5,7,6};
+		System.out.println("Unordered array");
+		for (int i = 0; i < numbers.length; i++) {
+			System.out.println(numbers[i]);
+		}
 		
 		//System.out.println(Helpers.containsDuplicates(numbers));
-		System.out.println(Helpers.binarySearch(28, numbers));
+		numbers = Helpers.bubbleSortImproved(numbers);
+		System.out.println("Ordered array");
+		for (int i = 0; i < numbers.length; i++) {
+			System.out.println(numbers[i]);
+		}	
+
 	}
 
 }
